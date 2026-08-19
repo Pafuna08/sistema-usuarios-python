@@ -487,20 +487,20 @@ A continuación se agregarán las capturas de pantalla correspondientes al desar
 
 26.1 Creación del entorno virtual
 Evidencia: creación del entorno virtual utilizando venv.
-![Creación del entorno virtual](capturas/1.png)
+<img src="capturas/1.png" alt="Creación del entorno virtual" width="700">
 
 26.2 Activación del entorno virtual
 Evidencia: entorno virtual activo mostrando (.venv) en la terminal.
-![Activación del entorno virtual](capturas/2.png)
+<img src="capturas/2.png" alt="Activación del entorno virtual" width="700">
 
 26.3 Instalación de dependencias
 Evidencia: instalación de python-dotenv.
-![Instalación de dependencias](capturas/3.png)
+<img src="capturas/3.png" alt="Instalación de dependencias" width="700">
 
 26.4 Archivo requirements.txt
 Evidencia: archivo requirements.txt mostrando:
 python-dotenv==1.2.3
-![Archivo requirements.txt](capturas/4.png)
+<img src="capturas/4.png" alt="Archivo requirements.txt" width="700">
 
 26.5 Estructura modular
 Evidencia: estructura de carpetas y archivos del proyecto en Visual Studio Code.
@@ -512,7 +512,7 @@ Insertar aquí la captura de pantalla.
 
 26.7 Registro de usuario
 Evidencia: registro exitoso de un usuario.
-![alt text](capturas/5.png)
+<img src="capturas/5.png" alt="Registro de usuario" width="700">
 
 26.8 Listado de usuarios
 Evidencia: listado de usuarios registrados.
@@ -543,8 +543,8 @@ Error: La edad no puede ser negativa.
 Error: La edad ingresada no es válida.
 Error: La edad debe ser un número entero.
 
-![alt text](capturas/6.png)
-![alt text](capturas/7.png)
+<img src="capturas/6.png" alt="Validación de datos" width="700">
+<img src="capturas/7.png" alt="Validación de datos" width="700">
 
 
 27. Reflexión final
