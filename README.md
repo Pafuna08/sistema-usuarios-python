@@ -487,20 +487,20 @@ A continuación se agregarán las capturas de pantalla correspondientes al desar
 
 26.1 Creación del entorno virtual
 Evidencia: creación del entorno virtual utilizando venv.
-![alt text](capturas/1.png)
+![Creación del entorno virtual](capturas/1.png)
 
 26.2 Activación del entorno virtual
 Evidencia: entorno virtual activo mostrando (.venv) en la terminal.
-![alt text](capturas/2.png)
+![Activación del entorno virtual](capturas/2.png)
 
 26.3 Instalación de dependencias
 Evidencia: instalación de python-dotenv.
-![alt text](capturas/3.png)
+![Instalación de dependencias](capturas/3.png)
 
 26.4 Archivo requirements.txt
 Evidencia: archivo requirements.txt mostrando:
 python-dotenv==1.2.3
-Insertar aquí la captura de pantalla.
+![Archivo requirements.txt](capturas/4.png)
 
 26.5 Estructura modular
 Evidencia: estructura de carpetas y archivos del proyecto en Visual Studio Code.
