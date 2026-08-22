@@ -81,8 +81,6 @@ También cuenta con validaciones para evitar errores en los datos ingresados.
 ## 5. Estructura del proyecto
 
 ```text
-La estructura del proyecto está organizada de la siguiente manera:
-
 sistema_usuarios/
 │
 ├── .venv/
