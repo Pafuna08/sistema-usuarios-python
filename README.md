@@ -80,6 +80,7 @@ También cuenta con validaciones para evitar errores en los datos ingresados.
 
 ## 5. Estructura del proyecto
 
+```text
 La estructura del proyecto está organizada de la siguiente manera:
 
 sistema_usuarios/
@@ -104,8 +105,10 @@ sistema_usuarios/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
 
 ## 6. Descripción de los módulos
+
 main.py
 
 Es el punto de entrada principal de la aplicación.
@@ -189,6 +192,7 @@ Cuando el entorno se encuentra correctamente activado, la terminal muestra:
 Por ejemplo:
 
 (.venv) PS C:\Users\PABLO 08\OneDrive\Escritorio\sistema_usuarios>
+
 ## 8. Gestión de dependencias
 
 El proyecto utiliza pip para administrar sus dependencias.
@@ -206,6 +210,7 @@ python -m pip install python-dotenv
 La versión utilizada en el proyecto es:
 
 python-dotenv==1.2.3
+
 ## 9. Archivo requirements.txt
 
 El archivo requirements.txt permite registrar las dependencias necesarias para ejecutar el proyecto.
@@ -276,8 +281,8 @@ El proyecto utiliza el siguiente archivo .gitignore:
 
 .venv/
 .env
-__pycache__/
-*.pyc
+**pycache**/
+\*.pyc
 
 Esto permite evitar que se suban al repositorio:
 
@@ -313,14 +318,15 @@ Al ejecutar el programa se muestra el siguiente menú:
 ========================================
 Sistema Usuarios - versión 1.0
 ========================================
+
 1. Registrar usuario
 2. Listar usuarios
 3. Buscar usuario
 4. Mostrar configuración
 5. Salir
 
-
 Seleccione una opción:
+
 ### 15. Registro de usuarios
 
 Para registrar un usuario se selecciona la opción:
@@ -350,6 +356,7 @@ Para visualizar los usuarios registrados se selecciona:
 El sistema muestra los usuarios registrados durante la ejecución:
 
 Usuarios registrados:
+
 1. Pablo - 25 años
 
 ## 17. Búsqueda de usuarios
@@ -418,6 +425,7 @@ Ingrese la edad: 150
 el sistema muestra:
 
 Error: La edad ingresada no es válida.
+
 ## 22. Validación de edad no numérica
 
 El sistema también controla cuando el usuario introduce letras en lugar de un número.
@@ -451,12 +459,12 @@ La aplicación fue dividida en diferentes módulos para separar responsabilidade
 La organización principal es:
 
 main.py
-    │
-    ├── app.config.settings
-    │
-    └── app.usuarios.gestor
-              │
-              └── app.usuarios.validaciones
+│
+├── app.config.settings
+│
+└── app.usuarios.gestor
+│
+└── app.usuarios.validaciones
 
 De esta manera, cada módulo tiene una responsabilidad específica.
 
@@ -490,7 +498,7 @@ from app.usuarios.validaciones import validar_nombre, validar_edad
 
 Esto demuestra el uso de módulos y paquetes en Python.
 
-## 26. Evidencias de aprendizaje ##
+## 26. Evidencias de aprendizaje
 
 A continuación se agregarán las capturas de pantalla correspondientes al desarrollo del proyecto.
 
@@ -554,7 +562,6 @@ Error: La edad debe ser un número entero.
 
 <img src="capturas/6.png" alt="Validación de datos" width="700">
 <img src="capturas/7.png" alt="Validación de datos" width="700">
-
 
 ## 27. Reflexión final
 
