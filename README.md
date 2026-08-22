@@ -82,7 +82,6 @@ También cuenta con validaciones para evitar errores en los datos ingresados.
 
 La estructura del proyecto está organizada de la siguiente manera:
 
-```text
 sistema_usuarios/
 │
 ├── .venv/
@@ -190,7 +189,7 @@ Cuando el entorno se encuentra correctamente activado, la terminal muestra:
 Por ejemplo:
 
 (.venv) PS C:\Users\PABLO 08\OneDrive\Escritorio\sistema_usuarios>
-8. Gestión de dependencias
+## 8. Gestión de dependencias
 
 El proyecto utiliza pip para administrar sus dependencias.
 
@@ -207,7 +206,7 @@ python -m pip install python-dotenv
 La versión utilizada en el proyecto es:
 
 python-dotenv==1.2.3
-9. Archivo requirements.txt
+## 9. Archivo requirements.txt
 
 El archivo requirements.txt permite registrar las dependencias necesarias para ejecutar el proyecto.
 
@@ -222,7 +221,8 @@ python -m pip freeze > requirements.txt
 Para instalar posteriormente todas las dependencias del proyecto se puede utilizar:
 
 python -m pip install -r requirements.txt
-10. Variables de entorno
+
+## 10. Variables de entorno
 
 El proyecto utiliza variables de entorno para separar la configuración del código fuente.
 
@@ -249,7 +249,8 @@ load_dotenv()
 Las variables son obtenidas mediante:
 
 os.getenv()
-11. Seguridad de las variables de entorno
+
+## 11. Seguridad de las variables de entorno
 
 El archivo .env contiene información de configuración y por esta razón no debe publicarse directamente en un repositorio público.
 
@@ -269,7 +270,7 @@ ADMIN_USER=admin
 
 De esta manera, otra persona puede conocer qué variables necesita configurar sin tener que publicar el archivo .env.
 
-12. Archivo .gitignore
+## 12. Archivo .gitignore
 
 El proyecto utiliza el siguiente archivo .gitignore:
 
@@ -284,7 +285,8 @@ El entorno virtual.
 Las variables de entorno.
 Archivos temporales de Python.
 Archivos compilados de Python.
-13. Ejecución del proyecto
+
+## 13. Ejecución del proyecto
 
 Para ejecutar el proyecto se debe abrir una terminal dentro de la carpeta:
 
@@ -303,7 +305,8 @@ Paso 4. Instalar las dependencias
 python -m pip install -r requirements.txt
 Paso 5. Ejecutar la aplicación
 python main.py
-14. Menú principal
+
+## 14. Menú principal
 
 Al ejecutar el programa se muestra el siguiente menú:
 
@@ -318,7 +321,7 @@ Sistema Usuarios - versión 1.0
 
 
 Seleccione una opción:
-15. Registro de usuarios
+### 15. Registro de usuarios
 
 Para registrar un usuario se selecciona la opción:
 
@@ -337,7 +340,8 @@ Ingrese la edad: 25
 El sistema muestra:
 
 Usuario registrado correctamente: Pablo (25 años)
-16. Listado de usuarios
+
+## 16. Listado de usuarios
 
 Para visualizar los usuarios registrados se selecciona:
 
@@ -347,7 +351,8 @@ El sistema muestra los usuarios registrados durante la ejecución:
 
 Usuarios registrados:
 1. Pablo - 25 años
-17. Búsqueda de usuarios
+
+## 17. Búsqueda de usuarios
 
 Para buscar un usuario se selecciona:
 
@@ -364,7 +369,8 @@ Usuario encontrado: Pablo - 25 años
 Si no existe:
 
 No se encontró el usuario.
-18. Visualización de configuración
+
+## 18. Visualización de configuración
 
 La opción:
 
@@ -381,7 +387,7 @@ Usuario administrador: admin
 
 Esto demuestra que la aplicación está leyendo correctamente la información almacenada en .env.
 
-19. Validación de nombre vacío
+## 19. Validación de nombre vacío
 
 El sistema evita registrar usuarios sin nombre.
 
@@ -392,7 +398,8 @@ Ingrese el nombre:
 se muestra:
 
 Error: El nombre no puede estar vacío.
-20. Validación de edad negativa
+
+## 20. Validación de edad negativa
 
 Si se introduce una edad negativa:
 
@@ -401,7 +408,8 @@ Ingrese la edad: -5
 el sistema muestra:
 
 Error: La edad no puede ser negativa.
-21. Validación de edad superior a 120
+
+## 21. Validación de edad superior a 120
 
 Si se introduce:
 
@@ -410,7 +418,7 @@ Ingrese la edad: 150
 el sistema muestra:
 
 Error: La edad ingresada no es válida.
-22. Validación de edad no numérica
+## 22. Validación de edad no numérica
 
 El sistema también controla cuando el usuario introduce letras en lugar de un número.
 
@@ -424,7 +432,7 @@ Error: La edad debe ser un número entero.
 
 Esto permite evitar que el programa termine inesperadamente debido a una entrada incorrecta.
 
-23. Manejo de excepciones
+## 23. Manejo de excepciones
 
 El proyecto utiliza excepciones para controlar errores durante la ejecución.
 
@@ -436,7 +444,7 @@ El bloque try/except permite capturar errores y mostrar mensajes comprensibles p
 
 Esto mejora la experiencia de uso y evita que la aplicación se cierre inesperadamente cuando se ingresan datos incorrectos.
 
-24. Modularización
+## 24. Modularización
 
 La aplicación fue dividida en diferentes módulos para separar responsabilidades.
 
@@ -463,7 +471,8 @@ Evitar concentrar todo el código en un único archivo.
 Reutilizar funciones.
 Facilitar futuras ampliaciones.
 Separar las responsabilidades de cada componente.
-25. Importación de módulos
+
+## 25. Importación de módulos
 
 El proyecto utiliza importaciones para conectar los diferentes módulos.
 
@@ -481,48 +490,48 @@ from app.usuarios.validaciones import validar_nombre, validar_edad
 
 Esto demuestra el uso de módulos y paquetes en Python.
 
-26. Evidencias de aprendizaje
+## 26. Evidencias de aprendizaje ##
 
 A continuación se agregarán las capturas de pantalla correspondientes al desarrollo del proyecto.
 
-26.1 Creación del entorno virtual
+**26.1 Creación del entorno virtual**
 Evidencia: creación del entorno virtual utilizando venv.
 <img src="capturas/1.png" alt="Creación del entorno virtual" width="700">
 
-26.2 Activación del entorno virtual
+**26.2 Activación del entorno virtual**
 Evidencia: entorno virtual activo mostrando (.venv) en la terminal.
 <img src="capturas/2.png" alt="Activación del entorno virtual" width="700">
 
-26.3 Instalación de dependencias
+**26.3 Instalación de dependencias**
 Evidencia: instalación de python-dotenv.
 <img src="capturas/3.png" alt="Instalación de dependencias" width="700">
 
-26.4 Archivo requirements.txt
+**26.4 Archivo requirements.txt**
 Evidencia: archivo requirements.txt mostrando:
 python-dotenv==1.2.3
 <img src="capturas/4.png" alt="Archivo requirements.txt" width="700">
 
-26.5 Estructura modular
+**26.5 Estructura modular**
 Evidencia: estructura de carpetas y archivos del proyecto en Visual Studio Code.
 Insertar aquí la captura de pantalla.
 
-26.6 Ejecución del sistema
+**26.6 Ejecución del sistema**
 Evidencia: menú principal del sistema ejecutándose desde la terminal.
 Insertar aquí la captura de pantalla.
 
-26.7 Registro de usuario
+**26.7 Registro de usuario**
 Evidencia: registro exitoso de un usuario.
 <img src="capturas/5.png" alt="Registro de usuario" width="700">
 
-26.8 Listado de usuarios
+**26.8 Listado de usuarios**
 Evidencia: listado de usuarios registrados.
 Insertar aquí la captura de pantalla.
 
-26.9 Búsqueda de usuario
+**26.9 Búsqueda de usuario**
 Evidencia: búsqueda exitosa de un usuario.
 Insertar aquí la captura de pantalla.
 
-26.10 Uso de variables de entorno
+**26.10 Uso de variables de entorno**
 Evidencia: configuración cargada desde .env.
 Resultado esperado:
 
@@ -533,7 +542,7 @@ Usuario administrador: admin
 
 Insertar aquí la captura de pantalla.
 
-26.11 Validación de datos
+**26.11 Validación de datos**
 Evidencia: mensajes generados al ingresar datos incorrectos.
 
 Ejemplos:
@@ -547,7 +556,7 @@ Error: La edad debe ser un número entero.
 <img src="capturas/7.png" alt="Validación de datos" width="700">
 
 
-27. Reflexión final
+## 27. Reflexión final
 
 El desarrollo de este proyecto permitió aplicar diferentes conceptos de Python avanzado en un escenario práctico.
 
@@ -575,7 +584,7 @@ El archivo .env se agregó al .gitignore para evitar que sea publicado accidenta
 
 El archivo .env.example permite documentar las variables necesarias sin exponer la configuración privada.
 
-28. Conclusión
+## 28. Conclusión
 
 El proyecto permitió integrar los conceptos estudiados sobre entornos virtuales, gestión de dependencias, variables de entorno y modularización.
 
@@ -583,7 +592,7 @@ La aplicación desarrollada cumple con las funcionalidades principales solicitad
 
 El uso de módulos, paquetes, excepciones, validaciones, venv, pip, requirements.txt y python-dotenv permitió construir una aplicación de consola organizada y aplicable a un escenario real de desarrollo en Python.
 
-29. Video de reflexión final
+## 29. Video de reflexión final
 
 En esta sección se agregará el enlace al video de YouTube correspondiente a la reflexión final sobre:
 
@@ -595,7 +604,7 @@ Enlace del video:
 
 Pegar aquí el enlace del video de YouTube.
 
-30. Repositorio
+## 30. Repositorio
 
 El código fuente del proyecto se encuentra disponible en GitHub.
 
@@ -603,7 +612,7 @@ Repositorio:
 
 Pegar aquí el enlace del repositorio de GitHub.
 
-31. Autor
+## 31. Autor
 
 Aprendiz: Pablo Fuenmayor
 
@@ -612,4 +621,3 @@ Programa de formación: SENA
 Evidencia: GA1-220501093-04-AA1-EV06
 
 Proyecto: Sistema Modular de Configuración y Gestión de Usuarios
-```
